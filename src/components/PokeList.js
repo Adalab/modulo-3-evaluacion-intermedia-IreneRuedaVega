@@ -16,7 +16,7 @@ class PokeList extends React.Component {
     });
     return (
       <div>
-        <ul>{pokemonItem}</ul>
+        <ul className="cards">{pokemonItem}</ul>
       </div>
     );
   }

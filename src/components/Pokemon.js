@@ -3,17 +3,25 @@ import React from "react";
 class Pokemon extends React.Component {
   render() {
     const pokemonsTypes = this.props.types.map((type, index) => {
-      return <li key={index}>{type}</li>;
+      return (
+        <li className="pokemon__types--list" key={index}>
+          {type}
+        </li>
+      );
     });
     return (
-      <article>
-        <div>
-          <h3>{this.props.name}</h3>
+      <article className="pokemon">
+        <div className="pokemon__img">
+          <img
+            className="pokemon__img--card"
+            src={this.props.url}
+            alt={this.props.name}
+          />
+          <div className="pokemon__name">
+            <h3 className="pokemon__name--card">{this.props.name}</h3>
+          </div>
         </div>
-        <div>
-          <img src={this.props.url} alt={this.props.name} />
-        </div>
-        <h4>{pokemonsTypes}</h4>
+        <ul className="pokemon__types">{pokemonsTypes}</ul>
       </article>
     );
   }

@@ -11,10 +11,11 @@ class App extends React.Component {
     };
   }
   render() {
-    console.log(data);
+    /* console.log(data); */
     return (
       <div>
-        <h1>Lista de pokemons</h1>
+        <h1 className="title">Mi lista de pokémon</h1>
+        <h2 className="slogan">¡ Hazte con todos !</h2>
         <PokeList pokemons={this.state.pokemons} />
       </div>
     );
