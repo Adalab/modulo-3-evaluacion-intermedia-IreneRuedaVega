@@ -6,7 +6,7 @@ El ejercicio consiste en desarrollar una página web sencilla con React.
 
 La web consiste en un listado de pokemon, con una tarjeta para cada uno con información relevante, como el nombre, tipos y una imagen. La información de los pokemon la obtenemos de un array de datos que incluiremos en el estado del componente App.
 
-Para realizar el ejercicio os proponemos seguir estos pasos:
+Para realizar el ejercicio se proponeseguir estos pasos:
 
 1. Plantear en papel la estructura de componentes para la web.
 2. Crear una nueva aplicación React.
@@ -14,3 +14,5 @@ Para realizar el ejercicio os proponemos seguir estos pasos:
 4. Pintar todas las tarjetas.
 5. Crear dos componentes, PokeList y Pokemon, respectivamente para el listado y para la card de cada Pokemon.
 6. BONUS: ajustar la maquetación al diseño.
+
+###¡Hazte con todos!
