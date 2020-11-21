@@ -2,6 +2,7 @@ import React from "react";
 import "../stylesheets/App.scss";
 import data from "../data/pokemons.json";
 import PokeList from "./PokeList";
+import pokemonImage from "../images/pokemon-logo.png";
 
 class App extends React.Component {
   constructor(props) {
@@ -11,11 +12,17 @@ class App extends React.Component {
     };
   }
   render() {
-    /* console.log(data); */
     return (
-      <div>
-        <h1 className="title">Mi lista de pokémon</h1>
-        <h2 className="slogan">¡ Hazte con todos !</h2>
+      <div className="page">
+        <div className="page__wrapper">
+          <h1 className="page__wrapper--title">Mi Pokédex</h1>
+          <img
+            className="page__wrapper--logo"
+            src={pokemonImage}
+            alt="logo de pokemon"
+          />
+        </div>
+        <h2 className="page__slogan">¡ Hazte con todos !</h2>
         <PokeList pokemons={this.state.pokemons} />
       </div>
     );
